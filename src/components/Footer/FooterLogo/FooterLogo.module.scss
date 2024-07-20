@@ -1,0 +1,27 @@
+@import './../../../style/pattern.scss';
+
+.footerLogoContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 270px;
+}
+
+.logoContainer{
+    display: flex;
+    align-items: center;
+    & p{
+        @extend %titlePattern;
+        font-size: 2rem;
+    }
+}
+
+.footerLogoText{
+    @extend %textPattern;
+}
+
+.svgContainer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

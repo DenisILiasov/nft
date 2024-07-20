@@ -1,0 +1,71 @@
+@import './../../../style/pattern.scss';
+
+.artistContent{
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+    @media(max-width: 745px){
+        gap: 32px;
+        justify-content: center;
+        align-items: center;
+    }
+    position: relative;
+    z-index: 3;
+}
+
+.artistImageContainerNftsRow1{
+    display: grid;
+    gap: 30px;
+    max-width: 850px;
+    grid-template-columns: repeat(2, 1fr);
+}   
+.artistImageContainerNftsRow2{
+    display: grid;
+    gap: 30px;
+    max-width: 850px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.artistImageRowContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.imageContainer{
+    display: flex;
+    gap: 30px;
+    @media(max-width: 1350px){
+        display: none;
+    }
+}
+
+.adaptiveImageContainer{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    @media(min-width: 1351px){
+        display: none;
+    }
+}
+
+.artistTextContainer{
+    @media(max-width: 745px){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.buttonContainer{
+    & button{
+        @extend %buttonTextPattern;
+        @extend %buttonPattern;
+    }
+    @media(min-width: 746px){
+        display: none;
+    }
+   
+}

@@ -1,0 +1,50 @@
+@import './../../style/pattern.scss';
+
+.burgerMenu{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    transition: all 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+    &.active{
+        opacity: 1;
+        visibility: inherit;
+    }
+}
+
+.burgerContent{
+    width: 60%;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    background-color: #0C162F;
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    transition: all 0.5s;
+    transform: translateX(300px);
+    &.active{
+        transform: translateX(0);
+    }
+}
+
+.burgerContentWrapp{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.clouseBurger{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    @extend %titlePattern;
+    font-size: 4rem;
+    transform: rotate(45deg);
+}

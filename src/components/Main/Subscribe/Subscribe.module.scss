@@ -1,0 +1,10 @@
+
+.subscribeContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media(max-width: 850px){
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+}

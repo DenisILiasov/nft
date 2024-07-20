@@ -1,0 +1,38 @@
+.discoverContainer{
+    padding: 90px 0;
+    @media(max-width: 1020px){
+        padding: 30px 0 40px 0;
+    }
+}
+
+.artContainer{
+    padding: 90px 0;
+    position: relative;
+    z-index: 2;
+    @media(max-width: 1020px){
+        padding: 30px 0 40px 0;
+    }
+}
+
+.createContainer{
+    padding: 90px 0;
+    @media(max-width: 1200px){
+        padding: 30px 0 40px 0;
+    }
+}
+
+.artistContainer{
+    padding: 90px 0;
+    @media(max-width: 1200px){
+        padding: 30px 0 40px 0;
+    }   
+}
+
+.subscribeContainer{
+    padding: 90px 0;
+    @media(max-width: 1200px){
+        padding: 30px 0 40px 0;
+    }  
+    max-width: 1000px;
+    margin: 0 auto; 
+}

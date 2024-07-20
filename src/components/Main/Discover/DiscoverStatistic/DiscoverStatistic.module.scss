@@ -1,0 +1,17 @@
+@import './../../../../style/pattern.scss';
+
+.discoverContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    & h2{
+        @extend %titlePattern;
+    }
+    & span{
+        color: #fffffd;
+    }
+    & p{
+        @extend %textPattern;
+        line-height: 160%;
+    }
+}

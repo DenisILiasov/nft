@@ -1,0 +1,38 @@
+@import '../../../../style/pattern.scss';
+
+.artistImageContent{
+    position: relative; 
+}
+
+.infoUserContainer{
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+}
+
+.infoUserContent{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.image{
+    @media(max-width: 350px){
+        width: 300px;
+        height: 320px;
+    }
+}
+
+
+.infoName{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    & div{
+        @extend %buttonTextPattern;
+    }
+    & p{
+        @extend %textPattern;
+        font-size: 0.875rem;
+    }
+}

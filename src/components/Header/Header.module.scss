@@ -1,0 +1,81 @@
+@import '../../style/pattern.scss';
+@import '../../style/variable.scss';
+
+.headerContainer{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button{
+    @extend %buttonPattern;
+    @extend %buttonTextPattern;
+    font-size: 1rem;
+}
+
+.headerLogoContainer{
+    display: flex;
+    align-items: center;
+}
+
+.headerLogo{
+    @extend %titlePattern;
+    font-size: 2rem;
+}
+
+.yellow{
+    color: $colorYellow;
+}
+
+.wrapp{
+    @media(max-width: 768px){
+        display: none;
+    }
+}
+
+.burger{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    transition: all 0.5s;
+    &.active{
+        transform: rotate(90deg);
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 25px;
+        height: 2px;
+        background-color: $colorWhite;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 25px;
+        height: 2px;
+        background-color: $colorWhite;
+    }
+
+    & span{
+        position: absolute;
+        width: 25px;
+        top: 11px;
+        height: 2px;
+        background-color:  $colorWhite;
+    }
+    @media(min-width: 769px){
+        display: none;
+    }
+}
+
+.burgerMenuContent{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}

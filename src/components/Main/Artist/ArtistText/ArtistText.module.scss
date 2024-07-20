@@ -1,0 +1,27 @@
+@import './../../../../style/pattern.scss';
+
+
+.artistTextContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & h2{
+        @extend %titlePattern;
+    }
+    & button{
+        @extend %buttonTextPattern;
+        @extend %buttonPattern;
+        @media(max-width: 745px){
+            display: none;
+        }
+    }
+}
+
+.titleContainer{
+    max-width: 400px;
+    @media(max-width: 745px){
+        text-align: center;
+        max-width: 700px;
+    }
+}
+

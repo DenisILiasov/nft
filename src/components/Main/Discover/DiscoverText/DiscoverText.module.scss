@@ -1,0 +1,29 @@
+@import '../../../../style/pattern.scss';
+
+.discoverTitle{
+    & h1{
+        @extend %titlePattern;
+        font-size: 4rem;
+        @media(max-width: 1020px){
+            text-align: center;
+        }
+        @media(max-width: 676px){
+            font-size: 2.5rem;
+        }
+    }
+}
+
+.discoverSubtitle{
+    & p{
+        @extend %textPattern;
+        @media(max-width: 1020px){
+            text-align: center;
+        }
+    }
+}
+
+.discoverTextContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

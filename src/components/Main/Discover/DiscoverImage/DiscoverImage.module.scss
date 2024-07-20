@@ -1,0 +1,94 @@
+@import './../../../../style/pattern.scss';
+
+.imageWrapp{
+    padding: 0 50px 0 0;
+    & img{
+        border-radius: 24px;
+        max-width: 464px;
+    }
+    @media(max-width: 1020px){
+        padding: 0;
+        width: 100%;
+    }
+    @media(max-width: 464px){
+        & img{
+            width: 294px;
+            height: 344px;
+        }
+    }
+}
+
+.discoverImageContainer{
+    position: relative;
+    z-index: 2;
+}
+
+.buttonContainer{
+    width: 100%;
+    & button{
+        @extend %buttonTextPattern;
+        width: 100%;
+        padding: 1em 0;
+        border-radius: 8px;
+        background-color: transparent;
+        border: 1px solid #d3f85a;
+    }
+}
+
+.discoverImageInfo{
+    padding: 20px;
+    box-shadow: 0 9px 50px 0 rgba(23, 36, 65, 0.04);
+    background: #131e3a;
+    border-radius: 16px;
+    border-top: 1px solid #d3f85a;
+    width: 19rem;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: absolute;
+    bottom: -76px;
+    right: 0;
+    @media(max-width: 1020px){
+        right: -40px;
+    }
+    @media(max-width: 565px){
+        right: 0;
+    }
+    @media(max-width: 464px){
+        width: 15.25rem;
+        gap: 15px;
+        padding: 10px;
+        right: -40px;
+    }
+    @media(max-width: 384px){
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+
+.textContaiener{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blur{
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    filter: blur(100px);
+    background: #1f413d;
+    top: 30%;
+    left: -50%;
+    z-index: -1;
+   
+    @media(max-width: 1020px){
+        top: 80%;
+    }
+}
+
+.infoContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}

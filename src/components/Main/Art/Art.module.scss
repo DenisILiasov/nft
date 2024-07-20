@@ -1,0 +1,46 @@
+@import './../../../style/pattern.scss';
+
+.artContent{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    @media(max-width: 710px){
+        gap: 30px;
+    }
+}
+
+.artsContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media(max-width: 1250px){
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    position: relative;
+    z-index: 2;
+}
+
+.button{
+    text-align: center;
+    & button{
+        @extend %buttonTextPattern;
+        @extend %buttonPattern;
+        @media(min-width: 711px){
+            display: none;
+        }
+    }
+}
+
+.blur{
+    position: absolute;
+    width: 25vw;
+    height: 40vh;
+    filter: blur(100px);
+    background: #1f413d;
+    bottom: -50px;
+    right: -20px;
+    z-index: -1;
+    
+}

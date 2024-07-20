@@ -1,0 +1,63 @@
+.discoverContent{
+    display: flex;
+    justify-content: space-between;
+    @media(max-width: 1020px){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+}
+
+.mainDiscoverText{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    max-width: 544px;
+    @media(max-width: 1020px){
+        align-items: center;
+        max-width: 1000px;
+    }
+    
+}
+
+.discoverTextContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    @media(max-width: 676px){
+        gap: 30px;
+    }
+}
+
+.discoverStatistikContainer{
+    padding: 0 15px;
+    display: flex;
+    gap: 90px;
+    @media(max-width: 676px){
+        display: none;
+    }
+}
+
+
+.discoverModileStatistic{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    @media(min-width: 677px){
+        display: none;
+    }
+    @media(max-width: 464px){
+        gap: 40px;
+    }
+}
+
+.mainDiscoverImage{
+    @media(max-width: 676px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+   
+}

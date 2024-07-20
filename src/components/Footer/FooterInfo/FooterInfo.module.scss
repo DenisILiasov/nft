@@ -1,0 +1,32 @@
+@import '../../../style/pattern.scss';
+
+.infoContainer{
+    display: flex;
+    gap: 90px;
+    @media(max-width: 925px){
+        gap: 30px;
+    }
+    @media(max-width: 800px){
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.infoContent{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    & h2{
+        @extend %textPattern;
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+    & div{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        & p {
+            @extend %textPattern;
+        }
+    }
+}

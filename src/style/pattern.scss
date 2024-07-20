@@ -1,0 +1,34 @@
+@import './variable.scss';
+
+%titlePattern{
+    font-family: Ubuntu;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    @media(max-width: 676px){
+        font-size: 2rem;
+    }
+}
+
+%textPattern{
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+%buttonTextPattern{
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+%buttonPattern{
+    padding: 0.75em 2.5em;
+    background-color: $colorYellow;
+    border-radius: 8px;
+}

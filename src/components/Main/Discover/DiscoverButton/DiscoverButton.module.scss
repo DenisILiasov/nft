@@ -1,0 +1,30 @@
+@import './../../../../style/pattern.scss';
+
+.discoverButton{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+  
+    & button{
+        @extend %buttonTextPattern;
+        @extend %buttonPattern;
+    }
+    & p{
+        @extend %buttonTextPattern;
+        cursor: pointer;
+    }
+    @media(max-width: 1020px){
+        justify-content: center;
+    }
+    @media(max-width: 384px){
+        & button{
+            width: 100%;
+            padding: 1em 0;
+        }
+        & p {
+            width: 100%;
+            text-align: center;
+        }
+
+    }
+}

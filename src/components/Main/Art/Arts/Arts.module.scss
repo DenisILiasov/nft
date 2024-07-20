@@ -1,0 +1,82 @@
+@import '../../../../style/pattern.scss';
+
+.artsContent{
+    border-top: 1px solid #d3f85a;
+    border-radius: 28px;
+    padding: 20px;
+    max-width: 410px;
+    background: #131e3a;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.artImageContainer{
+    & img{
+        height: 325px;
+        border-radius: 16px;
+        @media(max-width: 400px){
+            width: 311px;
+            height: 340px;
+        }
+        @media(max-width: 360px){
+            width: 280px;
+            height: 290px;
+        }
+    }
+
+}
+
+.artsTextContent{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.artsTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @extend %buttonTextPattern;
+    font-size: 1.5rem;
+}
+
+.priceContainer{
+    display: flex;
+    align-items: center;
+    & p{
+        @extend %textPattern;
+    }
+}
+
+.artsTime{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.time{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.timeSvg{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.timeText{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #838382;
+}
+
+.button{
+    & button{
+        @extend %buttonTextPattern;
+        @extend %buttonPattern;
+    }
+}

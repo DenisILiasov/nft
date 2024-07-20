@@ -1,0 +1,54 @@
+@import './../../../../style/pattern.scss';
+
+
+.createTextContent{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 430px;
+    @media(max-width: 1280px){
+        max-width: 1000px;
+    }
+}
+
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    & h2{
+        @extend %titlePattern;
+        @media(max-width: 1280px){
+            text-align: center;
+        }
+    }
+    & p{
+        @extend %textPattern;
+        @media(max-width: 1280px){
+            text-align: center;
+        }
+    }
+}
+
+.buttonContainer{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    @extend %buttonTextPattern;
+    & button{
+        @extend %buttonPattern;
+        @extend %buttonTextPattern;
+        @media(max-width: 676px){
+            padding: 1em 0;
+            width: 100%;
+        }
+    }
+    @media(max-width: 1280px){
+        justify-content: center;
+    }
+    @media(max-width: 676px){
+        & p{
+            width: 100%;
+        }
+    }
+}
